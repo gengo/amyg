@@ -24,56 +24,10 @@
   h2{
 	border-bottom:1px dotted grey;
   }
-  
-  /*github*/
-  
-	@import ""compass"";
-	
-	#github {
-	  left: -65px;
-	  height: 30px;
-	  top: 40px;
-	  position: absolute;
-	  text-decoration: none;
-	  width: 250px;
-	  @include rotate(-45deg);
-	  span {
-		background: black;
-		color: white;
-		font-size: 14px;
-		left: 0;
-		padding: 5px 0;
-		position: absolute;
-		text-align: center;
-		width: 250px;
-		@include box-shadow(rgba(black, 0.2) 1px 1px 10px);
-		// If you’re using Compass < 0.11 use this:
-		// @include box-shadow(rgba(black, 0.2), 1px, 1px, 10px);
-		@include transition(opacity, 1s);
-		&:last-child {
-		  /* this is the backside */
-		  background: red;
-		  opacity: 0;
-		}
-	  }
-	  :hover span {
-		&:first-child {
-		  opacity: 0;
-		}
-		&:last-child {
-		  opacity: 1;
-		}
-	  }
-	}
-
 </style>
 </head>
 <body>
-  
-		  <a id="github" href="https://github.com/titoBouzout/amyg">
-			<span>Fork me on GitHub!</span>
-			<span>Get free lemonade!</span>
-		  </a>
+<a href="https://github.com/titoBouzout/amyg"><img style="position: absolute; top: 0; right: 0; border: 0;" src="https://assets1.github.com/img/abad93f42020b733148435e2cd92ce15c542d320?repo=&url=http%3A%2F%2Fs3.amazonaws.com%2Fgithub%2Fribbons%2Fforkme_right_green_007200.png&path=" alt="Fork me on GitHub"></a>
 
 		  <header class="header">
 			<h1>Welcome to plugGengo!</h1>
@@ -114,7 +68,7 @@
 				
 				<h2 name="versions" id="versions">Version Changes:</h2>
 
-				<b>1.0.6 (2010-01-13)</b>
+				<b><a href="https://github.com/titoBouzout/amyg/tree/1.0.6">1.0.6 (2010-01-13)</a></b>
 				<ul>
 				  <li>Change sand-boxed(testing) API to public API</li>
 				  <li>Change home-page and hot-linked pictures from dropbox.com to github.com</li>
