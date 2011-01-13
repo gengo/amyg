@@ -49,7 +49,7 @@ An example of a complete flow of changes:
   * <b>Repeat the test into the other CMS</b>.
 * Search for the last version number marked on this repository and bump one number in all the files o this repository. ( with the exception of /z_home-page/index.html
   * <b>Be sure</b> to log your version changes into the /z_home-page/index.html page
-* submit the patch and tag the code with that version.(mm I'm not sure of this step.)
+* submit the patch and a tag with that version should be created.
 
 Behind the scenes:
 ------------------------
