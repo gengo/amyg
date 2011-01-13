@@ -24,10 +24,56 @@
   h2{
 	border-bottom:1px dotted grey;
   }
+  
+  /*github*/
+  
+	@import ""compass"";
+	
+	#github {
+	  left: -65px;
+	  height: 30px;
+	  top: 40px;
+	  position: absolute;
+	  text-decoration: none;
+	  width: 250px;
+	  @include rotate(-45deg);
+	  span {
+		background: black;
+		color: white;
+		font-size: 14px;
+		left: 0;
+		padding: 5px 0;
+		position: absolute;
+		text-align: center;
+		width: 250px;
+		@include box-shadow(rgba(black, 0.2) 1px 1px 10px);
+		// If you’re using Compass < 0.11 use this:
+		// @include box-shadow(rgba(black, 0.2), 1px, 1px, 10px);
+		@include transition(opacity, 1s);
+		&:last-child {
+		  /* this is the backside */
+		  background: red;
+		  opacity: 0;
+		}
+	  }
+	  :hover span {
+		&:first-child {
+		  opacity: 0;
+		}
+		&:last-child {
+		  opacity: 1;
+		}
+	  }
+	}
+
 </style>
 </head>
 <body>
   
+		  <a id="github" href="https://github.com/titoBouzout/amyg">
+			<span>Fork me on GitHub!</span>
+			<span>Get free lemonade!</span>
+		  </a>
 
 		  <header class="header">
 			<h1>Welcome to plugGengo!</h1>
@@ -38,7 +84,6 @@
 			  Easy to use, easy installation these allows you to request translations, see requested works, preview cost, and add comments to your works.
 			</p>
 			
-			<p><b>Note:</b> These plugins currently use sand-boxed API.</p>
 		  </header>
 
 		  <nav class="menu">
@@ -61,42 +106,43 @@
 				<li><a href="#WordPress">WordPress</a></li>
 				<li><a href="#Joomla">Joomla!</a></li>
 				<li><a href="#NucleusCMS">NucleusCMS</a></li>
-				<li><a href="myGengo-0.110110.0-1294700867.xpi">Firefox Extension</a></li>
+				<li><a href="https://addons.mozilla.org/addon/270904/">Firefox Extension</a></li>
 			  </ul>
 		  </nav>
 		  
 		  <section class="versions">
 				
 				<h2 name="versions" id="versions">Version Changes:</h2>
-				
-				
-				<!-- 
-				<b><a href="history/1.0.6.zip">1.0.6 (2010-01-13)</a></b>
+
+				<b>1.0.6 (2010-01-13)</b>
 				<ul>
-				  <li>Change sandboxed API to public API</li>
-				  
+				  <li>Change sandboxed(testing) API to public API</li>
+				  <li>Change home-page and hotlinked pictures from dropbox.com to github.com</li>
+				  <li>Installed repository on github.com</li>
+				  <li>Create "compiler.php" to automate the build of the packages</li>
+				  <li>Use long php tags( '&lgt;?php' instead of '&lgt;?' ) to avoid conflict with some servers</li>
+				  <li>Modified zem_tpl to allow ant script automatically recompile textpattern for distribution</li>
 				</ul>
-				-->
 				
-				<b><a href="history/1.0.5.zip">1.0.5 (2010-01-11)[sandboxed API]</a></b>
+				1.0.5 (2010-01-11)[sandboxed API]
 				<ul>
 				  <li>Fix: missing end tag of div breaking layout.</li>
 				  <li>Fix: nucleus CMS breaks some Ajax load.</li>
 				</ul>
 								
-				<b><a href="history/1.0.4.zip">1.0.4 (2010-01-11)[sandboxed API]</a></b>
+				1.0.4 (2010-01-11)[sandboxed API]
 				<ul>
 				  <li>Improves: reduce a lot the load time by getting the jobs and comments via Ajax.</li>
 				  <li>Improves: Jobs cost are resolved via the API with real time preview.</li>
 				</ul>
 				
-				<b><a href="history/1.0.3.zip">1.0.3 (2010-01-11)[sandboxed API]</a></b>
+				1.0.3 (2010-01-11)[sandboxed API]
 				<ul>
 				  <li>Replaces post new job call for post new job<b>s</b> ( auto_approve should work)</li>
 				  <li>Fix: Adds some missing strings</li>
 				</ul> 
 				
-				<b><a href="history/1.0.2.zip">1.0.2 (2010-01-11)[sandboxed API]</a></b>
+				1.0.2 (2010-01-11)[sandboxed API]
 				<ul>
 				  <li>Improve: Add localization script, it allows you to chose the language of the application, by default it shows English, currently available languages: Spanish, English</li>
 				  <li>Improve: Layout, descriptions and spelling</li>
@@ -105,12 +151,12 @@
 				  <li>Fix: My balance starts empty</li>
 				</ul>
 						   
-				<b><a href="history/1.0.1.zip">1.0.1 (2010-01-10)[sandboxed API]</a></b>
+				1.0.1 (2010-01-10)[sandboxed API]
 				<ul>
 				  <li>Fix round function of the "total preview"</li>
 				</ul>
 				
-				<b><a href="history/1.0.0.zip">1.0.0 (2010-01-09)[sandboxed API]</a></b>
+				1.0.0 (2010-01-09)[sandboxed API]
 				<ul>
 				  <li>First public release </li>
 				</ul>
@@ -143,10 +189,10 @@
 
 			<h2 name="localization" id="localization">Localization:</h2>
 
-			<b>List of language files</b>
+			<b>List of language files (localization)</b>
 			<ul>
-			  <li><a href="translations/en.dtd">translations/en.dtd</a></li>
-			  <li><a href="translations/es.dtd">translations/es.dtd</a></li>
+			  <li><a href="https://github.com/titoBouzout/amyg/raw/master/z_localization/en.dtd">translations/en.dtd</a></li>
+			  <li><a href="https://github.com/titoBouzout/amyg/raw/master/z_localization/es.dtd">translations/es.dtd</a></li>
 			</ul>
 			<b>Notice:</b> You need to escape on strings "&amp;" with "&amp;amp;" and quotes (") with "&amp;quot;" on these files.
 		  </section>
@@ -160,17 +206,17 @@
 			  <ul>
 				<li>Install <a name="Textpattern" href="http://textpattern.com/">Textpattern</a></li>
 				<li>On admin interface Go to "Admin" -> "Plug-ins"</li>
-				<li>Copy the content of "plugin.txt" and press "Upload"</li>
+				<li>Copy the content of "plugin.txt", paste into the textbox and press "Upload"</li>
 				<li>Press Install.</li>
-				<li>Go to "Admin" -> "Plug-in" and active this plug-in by clicking "no"</li>
+				<li>On this screen look for the plugin and active by clicking "no"</li>
 				<li>Load the interface from "Content" -> "Translations"</li>
 			  </ul>
 			  
 			  To compile (powered by <a href="http://textpattern.org/mods/239/zem_tpl-textpattern-plugin-template">zem_tpl</a>)
 			  <ul>
-				  <li>Run from the command line "php myg_translations_plugin.php > plugin.txt"</li>
+				  <li>Run from the command line "php myg_translations_plugin.php > textpattern.txt"</li>
 			  </ul>
-			  <a href="textpattern.zip"><b>Download myGengo for Textpattern</b></a>
+			  <a href="https://github.com/titoBouzout/amyg/raw/master/z_distribution/textpattern.txt"><b>Download myGengo for Textpattern</b></a>
 			  
 		  </section>
 		  
@@ -183,9 +229,9 @@
 				<li>Copy the plug-in folder "mygengo" to /frog/plug-ins/ ( should be '/frog/plug-ins/mygengo'  it's case sensitive )</li>
 				<li>Give write permissions to /frog/plug-ins/mygengo/nonpublic/</li>
 				<li>On back-end go to "Administration" and activate this plug-in by simple click on check-box</li>
-				<li>It adds a top tab called "myGengo"</li>
+				<li>It adds a top tab called "myGengo" (you maybe need to refresh the page)</li>
 			  </ul>
-			  <a href="frogcms.zip"><b>Download myGengo for FrogCMS</b></a>
+			  <a href="https://github.com/titoBouzout/amyg/raw/master/z_distribution/frogcms.zip"><b>Download myGengo for FrogCMS</b></a>
 		
 		  </section>
 		  
@@ -195,11 +241,12 @@
 			  To install:
 			  <ul>
 				<li>Install <a name="WordPress" href="http://wordpress.com/">WordPress</a></li>
-				<li>Copy the plug-in to /wp-content/plug-ins/</li>
-				<li>On back-end go to Plug-ins and activate this plug-in.</li>
+				<li>On back-end go to "Plug-ins" -> "Add new" -> "Upload"</li>
+				<li>Upload this zip file </li>
+				<li>Activate your plugin</li>
 				<li>It adds a menu-item "myGengo" under "Tools" menu in sidebar</li>
 			  </ul>
-			  <a href="wordpress.zip"><b>Download myGengo for WordPress</b></a>
+			  <a href="https://github.com/titoBouzout/amyg/raw/master/z_distribution/wordpress.zip"><b>Download myGengo for WordPress</b></a>
 		  </section>
  		  
 		  <section>
@@ -212,7 +259,7 @@
 				<li>Go to "Install" and browse for this zipped plug-in.</li>
 				<li>It adds a menu-item "myGengo" under "Components"</li>
 			  </ul>
-			  <a href="joomla.zip"><b>Download myGengo for Joomla!</b></a>
+			  <a href="https://github.com/titoBouzout/amyg/raw/master/z_distribution/joomla.zip"><b>Download myGengo for Joomla!</b></a>
 		  </section>
  
 		  <section >
@@ -224,18 +271,18 @@
 				  <li>Copy the plug-in folder "mygengo" and NP_mygengo.php to /nucleus/plug-ins/</li>
 				  <li>Give write permissions to /nucleus/plugins/mygengo/nonpublic/</li>
 				  <li>On back-end go to "Management" Plug-ins and activate this plug-in by selecting from the drop-down and clicking "install plug-in"</li>
-				  <li>It adds a sidebar tab called "myGengo"</li>
+				  <li>It adds a sidebar tab called "myGengo" under "plugins" submenu</li>
 				</ul>
-				<a href="nucleuscms.zip"><b>Download myGengo for NucleusCMS</b></a>
+				<a href="https://github.com/titoBouzout/amyg/raw/master/z_distribution/nucleuscms.zip"><b>Download myGengo for NucleusCMS</b></a>
 			
 		  </section>
 		
-		  <footer >
+		  <footer>
 			
 				<h2 name="motivations" id="motivations">Motivations</h2>
 				<ul>
 				  <li>
-			  These plug-ins were developed by <script>document.write('<a href="mailto:my'+'gengo'+''+'plugins'+'@'+'G'+'mail.com">Tito Bouzout</a>')</script> to participate in the bounty APILab program from <a href="http://mygengo.com/">myGengo</a> ( professional translation service ).
+			  These plug-ins were developed by <script>document.write('<a href="https://titobouzout.github.com/amyg/'+'">Tito Bouzout</a>')</script> to participate in the bounty APILab program from <a href="http://mygengo.com/">myGengo</a> ( professional translation service ).
 				  </li>
 				</ul>
   
