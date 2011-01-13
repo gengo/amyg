@@ -27,27 +27,27 @@ o I decided to share most of the code even if it is not "correct" behavior becau
 A example of a complete flow of changes:
 ------------------------
 
-Imagine this situation:
+<b>Imagine this situation:</b>
 
  - some change to localizations
  - some change to the class
  - some change to the plug-ins
 
-Flow to make the changes:
+<b>Flow to make the changes:</b>
 
 * Download this repository to a folder in a server.
 * Make any change needed to the class /z_template_class/myGengoClass.php
+  * <b>be sure</b> you don't break any other CMS with the modifications of the class.
 * Make any change needed to the localizations  /z_template_localizations/ ( such: en.dtd )
-* Make any change needed to the "CMS Registration"  ( such : /wordpress/ )
   * <b>Be sure</b> to make the same change to the other locales.
+* Make any change needed to the "CMS Registration"  ( such : /wordpress/ )
 * execute "compiler.php"
 * find your created new version into the folder /z_distribution/ (example: /z_distribution/wordpress.zip)
-  * <b>be sure</b> you don't break any other CMS with the modifications of the class.
-* test your build into the CMS to make sure all works as excepted.
+* Test your build into the CMS to make sure all works as excepted.
 * do these steps as many times you need.
 * Done?
- - Repeat the test into the other CMS.
+ * <b>Repeat</b> the test into the other CMS.
 * Search for the last version number marked on this repository and bump one number in all the files o this repository. ( with the exception of /z_home-page/index.html
- - Be sure to log your version changes into the /z_home-page/index.html page
+ * <b>Be sure</b> to log your version changes into the /z_home-page/index.html page
 * submit the patch and tag the code with that version.(mm I'm not sure of this step.)
 
