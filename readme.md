@@ -24,7 +24,7 @@ For developers:
 
 o I decided to share most of the code even if it is not "correct" behavior because this really makes things simple to maintain.
 
-A example of a complete flow of changes:
+An example of a complete flow of changes:
 ------------------------
 
 <b>Imagine this situation:</b>
@@ -37,7 +37,7 @@ A example of a complete flow of changes:
 
 * Download this repository to a folder in a server.
 * Make any change needed to the class /z_template_class/myGengoClass.php
-  * <b>be sure</b> you don't break any other CMS with the modifications of the class.
+  * <b>Be sure</b> you don't break any other CMS with the modifications of the class.
 * Make any change needed to the localizations  /z_template_localizations/ ( such: en.dtd )
   * <b>Be sure</b> to make the same change to the other locales.
 * Make any change needed to the "CMS Registration"  ( such : /wordpress/ )
@@ -46,8 +46,14 @@ A example of a complete flow of changes:
 * Test your build into the CMS to make sure all works as excepted.
 * do these steps as many times you need.
 * Done?
- * <b>Repeat</b> the test into the other CMS.
+  * <b>Repeat</b> the test into the other CMS.
 * Search for the last version number marked on this repository and bump one number in all the files o this repository. ( with the exception of /z_home-page/index.html
- * <b>Be sure</b> to log your version changes into the /z_home-page/index.html page
+  * <b>Be sure</b> to log your version changes into the /z_home-page/index.html page
 * submit the patch and tag the code with that version.(mm I'm not sure of this step.)
 
+Behind the scenes:
+------------------------
+
+* This repository has two branches ( master[the plug-ins code] ), (gh-pages[the plug-ins home-page]){which is included too into the folder /z_home-page/}
+* First plan is to integrate missing features into each plug-in sharing the same class.
+* Please before starting to make big changes notify of your plan here so we avoid huge collisions. 
