@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE install SYSTEM "http://dev.joomla.org/xml/1.5/component-install.dtd">
+<install type="component" version="1.5.0">
+	<name>plugengo</name>
+	<!-- The following elements are optional and free of formatting conttraints -->
+	<creationDate>Enero 2011</creationDate>
+	<author>Tito Bouzout</author>
+	<authorEmail>http://titobouzout.github.com/amyg/</authorEmail>
+	<authorUrl>http://titobouzout.github.com/amyg/</authorUrl>
+	<copyright>(C) 2011 All rights reserved.</copyright>
+	<license>GNU/GPL</license>
+	<!--  The version string is recorded in the components table -->
+	<version>1.0.6</version>
+	<!-- The description is optional and defaults to the name -->
+	  <description>
+    <![CDATA[<p>Order translations from myGengo services directly from the admin interface.
+	Allows you to request human translation of your website content such blog post, etc.
+  </p>]]></description> 
+
+	<!-- Custom Install Script to execute 
+	<installfile>install.eventlist.php</installfile>
+	-->
+	<!-- Custom Uninstall Script to execute 
+	<uninstallfile>uninstall.eventlist.php</uninstallfile>
+  -->
+	<!-- Install Database Section 
+	<install>
+		<sql>
+			<file driver="mysql" charset="utf8">install.mysql.utf8.sql</file>
+			<file driver="mysql">install.mysql.nonutf8.sql</file>
+		</sql>
+	</install>
+	-->
+	<!-- Uninstall Database Section 
+	<uninstall>
+		<sql>
+			<file driver="mysql" charset="utf8">uninstall.mysql.utf8.sql</file>
+			<file driver="mysql">uninstall.mysql.nonutf8.sql</file>
+		</sql>
+	</uninstall>
+-->
+	<!-- Site Main File Copy Section-->
+	<files>
+		
+		<filename>plugengo.php</filename>
+	</files>
+	 
+
+	
+	<!-- Site Main Media File Copy Section 
+	<media destination="com_helloworld">
+		<filename>helloworld.png</filename>
+	</media>
+-->
+	<administration>
+	
+		<!-- Administration Menu Section -->
+		<menu img="components/com_plugengo/images/plugengo.png" link="option=com_plugengo&amp;task=plugengo">myGengo</menu>
+		
+		
+		<!-- Administration Main File Copy Section -->
+		<!-- Note the folder attribute: This attribute describes the folder
+			to copy FROM in the package to install therefore files copied
+			in this section are copied from /admin/ in the package -->
+		<files folder="admin">
+		  <filename>admin.plugengo.php</filename>
+		  <filename>myGengoClass.php</filename>
+		  <filename>images/plugengo.png</filename>
+		  <filename>myGengoLanguages/en.dtd</filename>
+		  <filename>myGengoLanguages/es.dtd</filename>
+		</files>
+		
+		
+		<!-- Administration Main Media File Copy Section -->
+		<media folder="admin" destination="com_plugengo/images">
+	  	<filename>images/plugengo.png</filename>
+	  	 <filename>myGengoLanguages/en.dtd</filename>
+		  <filename>myGengoLanguages/es.dtd</filename>
+		</media>
+		-->
+	</administration>
+</install>

@@ -1,0 +1,1 @@
+<?php myGengo_load();?>

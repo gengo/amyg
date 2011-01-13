@@ -1,0 +1,72 @@
+ <!ENTITY myGengo.util.use.this "&amp; &quot; < >">
+ 
+ <!ENTITY myGengo.myGengo "myGengo">
+ <!ENTITY myGengo.curl.needed "Su servidor web necesita la extensión de PHP 'curl' habilitada para utiluzar este plug-in!. Contacta a su administrador de servidor">
+ <!ENTITY myGengo.my.balance "Mi Balance">
+ <!ENTITY myGengo.my.credits "Creditos disponibles {credits}">
+ 
+  <!ENTITY myGengo.footer.one "myGengo es una nueva manera revolucionaria para hacer pedidos de traducciones en línea que provee una gran precisión en tiempo record a un precio imbatible.">
+  <!ENTITY myGengo.footer.two "El sitio web de <a href=&quot;http://mygengo.com/&quot;>myGengo</a> ofrece muchas características que este plug-in no contiene, como la habilidad de hacer un seguimiento de revisiones de las traducciones, agrupar las traducciones, subir documentos de office y muchas más.">
+  <!ENTITY myGengo.get.valid.api.keys "Usted debe primero conseguir desde el sitio web de mygengo unas claves API validas!">
+  <!ENTITY myGengo.please.complete.all.field "Por favor complete todos los campos!">
+  <!ENTITY myGengo.keys.updated.sucessfully "Claves actualizadas con éxito">
+  <!ENTITY myGengo.comment.unable.to.post "Ops, no se ha podido postear el comentario, por favor refresque la página para intentar de nuevo.">
+  <!ENTITY myGengo.comment.to.job.sucessfully "Comentario añadido con exito al trabajo!">
+  <!ENTITY myGengo.job.post.failed "No se ha podido publicar su pedido de trabajo :(. Por favor intente de nuevo.">
+  <!ENTITY myGengo.job.post.sucessfully "Trabajo pedido con éxito">
+  <!ENTITY myGengo.first.get.an.account "El primer paso es obtener las claves de la API. Usted puede pedirlas desde el sitio web de <a href=&quot;http://mygengo.com/account/api_settings&quot;>myGengo</a>">
+  <!ENTITY myGengo.provide.your.api.keys "Guarde sus claves para utilizar la API">
+  <!ENTITY myGengo.api.keys.explanation "Las claves API le permitiran utilizar este plugin. Para obtener las claves puede dirijirse al sitio web de <a href=&quot;http://mygengo.com/account/api_settings&quot;>myGengo</a>.">
+  <!ENTITY myGengo.form.key.public "Llave pública:">
+  <!ENTITY myGengo.form.key.private "Llave privada:">
+  <!ENTITY myGengo.form.submit.update.keys "Actualizar claves">
+  <!ENTITY myGengo.your.jobs.count "Usted tiene ({count}) trabajos">
+  <!ENTITY myGengo.your.jobs.count.zero "Usted todavía no tiene ningún trabajo pedido!.">
+  <!ENTITY myGengo.translation "Traducción">
+  <!ENTITY myGengo.translations "Traducciones">
+  <!ENTITY myGengo.num.comments "Cargar comentarios">
+  <!ENTITY myGengo.job.unit.count "Conteo de unidad">
+  <!ENTITY myGengo.job.tier.type "Tipo de traducción ">
+  <!ENTITY myGengo.job.total.cost "Costo">
+  <!ENTITY myGengo.job.status "Estado">
+  <!ENTITY myGengo.job.languages "traducido desde {from} a {to}">
+  <!ENTITY myGengo.job.original.text "Texto original:">
+  <!ENTITY myGengo.job.translated.text "Texto traducido:">
+  <!ENTITY myGengo.job.comment.by "por usuario <b>{user}</b>">
+  <!ENTITY myGengo.form.submit.comment "Enviar comentario">
+  <!ENTITY myGengo.request.a.new.job "Pedir un nuevo trabajo">
+  <!ENTITY myGengo.request.a.new.job.description "Use este formulario para hacer pedidos de nuevos trabajos a myGengo">
+  <!ENTITY myGengo.languaje.and.quality.options "Opciones de lenguaje y calidad del mismo:">
+  <!ENTITY myGengo.job.title "Título del trabajo:">
+  <!ENTITY myGengo.content.to.translate "Contenido a traducir:">
+  <!ENTITY myGengo.comment.to.translator "Comentario al traductor (opcional)">
+  <!ENTITY myGengo.total.words "Total ( <span id=&quot;myGengoTotalWords&quot;>0</span> unidades)">
+  <!ENTITY myGengo.total.unit "$ <span id=&quot;myGengoTotalCredits&quot;></span>">
+
+  <!ENTITY myGengo.form.submit.job "Enviar trabajo">
+  <!ENTITY myGengo.cost.per.unit "costo por unidad">
+
+  <!ENTITY myGengo.tier.type.ultra "ultra">
+  <!ENTITY myGengo.tier.type.ultra_pro "ultra">
+  
+  <!ENTITY myGengo.tier.type.standard "estandard">
+  <!ENTITY myGengo.tier.type.machine "computadora">
+  <!ENTITY myGengo.tier.type.pro "profesional">
+  
+  <!ENTITY myGengo.status.approved "Aprobado">
+  <!ENTITY myGengo.status.available "Disponible">
+  <!ENTITY myGengo.status.unpaid "Falta de pago">
+  <!ENTITY myGengo.status.pending "Pendiente">
+  <!ENTITY myGengo.status.reviewable "Revisable">
+  <!ENTITY myGengo.status.rejected "Rechazado">
+  <!ENTITY myGengo.status.canceled "Cancelado">
+  
+  <!ENTITY myGengo.customer "Cliente">
+  
+  <!ENTITY myGengo.change.interface.language "Puede cambiar el lenguaje utilizado por este plugin a: ">
+	
+  <!ENTITY myGengo.plugin.home.page "Por actualizaciones puede visitar <a href="http://titobouzout.github.com/amyg/">la página web del plug-in</a>.  <br/>Versión actual: {version} - <a href=&quot;http://www.amazon.com/Roberto-Bouzout/wishlist/1AXD0MYDPQ1ZC/&quot; target=&quot;_blank&quot; title=&quot;realizar una contribución&quot; style=&quot;color:green;font-weight:bold;text-decoration:none;&quot;>contribuir al desarrollador</a>">
+	  
+  <!ENTITY myGengo.world.speaking.your.language "El mundo hablando en tu lenguaje!">
+
+    <!ENTITY myGengo.loading.please.wait "Cargando por favor espere…">
