@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8" />
+<title>plugGengo - Plug-ins for human-translation under Textpattern, Frog CMS, WordPress, and Nucleus </title>
+<meta name="description" content="Order translations from myGengo services directly from Textpattern, Frog CMS, WordPress, and Nucleus admin interfaces."/>
+<!--[if IE]>  
+  <script>  
+	document.createElement("header" );  
+	document.createElement("footer" );  
+	document.createElement("section");   
+	document.createElement("aside"  );  
+	document.createElement("nav"    );  
+	document.createElement("article");   
+	document.createElement("hgroup" );   
+	document.createElement("time"   );  
+  </script>  
+<![endif]-->
+<style>
+
+  body{
+	font-family:arial;
+  }
+  h2{
+	border-bottom:1px dotted grey;
+  }
+</style>
+</head>
+<body>
+  
+
+		  <header class="header">
+			<h1>Welcome to plugGengo!</h1>
+			<q>
+			  This page holds a set of plug-ins that allows you to use myGengo services directly from the admin interface of <a href="http://textpattern.com/">Textpattern</a>, <a href="http://www.madebyfrog.com/">Frog CMS</a>, <a href="http://wordpress.org/">WordPress</a>,  <a href="http://www.joomla.org/">Joomla!</a>, and <a href="http://nucleuscms.org/">NucleusCMS</a>. There is also a <a href="http://www.mozilla.com/">Mozilla</a> Extension.
+			</q>
+			<p>
+			  Easy to use, easy installation these allows you to request translations, see requested works, preview cost, and add comments to your works.
+			</p>
+			
+			<p><b>Note:</b> These plugins currently use sand-boxed API.</p>
+		  </header>
+
+		  <nav class="menu">
+			  <h2>Menu:</h2>
+			  <ul>
+				<li><a href="#installation">Installation Instructions</a></li>
+				<li><a href="#versions">Version Changes</a></li>
+				<li><a href="#source">Source Code</a></li>
+				<li><a href="#localization">Localization</a></li>
+				<li><a href="#motivations">Motivations</a></li>
+			  </ul>
+		  </nav>
+		  
+		  
+		  <nav class="menu">
+			  <h2 name="installation" id="installation">Installation Instructions:</h2>
+			  <ul>
+				<li><a href="#Textpattern">Textpattern</a></li>
+				<li><a href="#FrogCMS">FrogCMS</a></li>
+				<li><a href="#WordPress">WordPress</a></li>
+				<li><a href="#Joomla">Joomla!</a></li>
+				<li><a href="#NucleusCMS">NucleusCMS</a></li>
+				<li><a href="myGengo-0.110110.0-1294700867.xpi">Firefox Extension</a></li>
+			  </ul>
+		  </nav>
+		  
+		  <section class="versions">
+				
+				<h2 name="versions" id="versions">Version Changes:</h2>
+				
+				
+				<!-- 
+				<b><a href="history/1.0.6.zip">1.0.6 (2010-01-13)</a></b>
+				<ul>
+				  <li>Change sandboxed API to public API</li>
+				  
+				</ul>
+				-->
+				
+				<b><a href="history/1.0.5.zip">1.0.5 (2010-01-11)[sandboxed API]</a></b>
+				<ul>
+				  <li>Fix: missing end tag of div breaking layout.</li>
+				  <li>Fix: nucleus CMS breaks some Ajax load.</li>
+				</ul>
+								
+				<b><a href="history/1.0.4.zip">1.0.4 (2010-01-11)[sandboxed API]</a></b>
+				<ul>
+				  <li>Improves: reduce a lot the load time by getting the jobs and comments via Ajax.</li>
+				  <li>Improves: Jobs cost are resolved via the API with real time preview.</li>
+				</ul>
+				
+				<b><a href="history/1.0.3.zip">1.0.3 (2010-01-11)[sandboxed API]</a></b>
+				<ul>
+				  <li>Replaces post new job call for post new job<b>s</b> ( auto_approve should work)</li>
+				  <li>Fix: Adds some missing strings</li>
+				</ul> 
+				
+				<b><a href="history/1.0.2.zip">1.0.2 (2010-01-11)[sandboxed API]</a></b>
+				<ul>
+				  <li>Improve: Add localization script, it allows you to chose the language of the application, by default it shows English, currently available languages: Spanish, English</li>
+				  <li>Improve: Layout, descriptions and spelling</li>
+				  <li>Improve: Shows version number, link to this page to check for updates</li>
+				  <li>Improve: Added Joomla! to the set of plug-ins</li>
+				  <li>Fix: My balance starts empty</li>
+				</ul>
+						   
+				<b><a href="history/1.0.1.zip">1.0.1 (2010-01-10)[sandboxed API]</a></b>
+				<ul>
+				  <li>Fix round function of the "total preview"</li>
+				</ul>
+				
+				<b><a href="history/1.0.0.zip">1.0.0 (2010-01-09)[sandboxed API]</a></b>
+				<ul>
+				  <li>First public release </li>
+				</ul>
+			
+		  </section>
+		  
+		  
+		  <section class="versions">
+
+			<h2 name="source" id="source">Source Code:</h2>
+
+			<b>Version Control</b>
+			<ul>
+			  <li>https://github.com/titoBouzout/amyg</li>
+			</ul>
+
+			<b>Bugs</b>
+			<ul>
+			  <li>https://github.com/titoBouzout/amyg/issues</li>
+			</ul>
+
+			<b>License</b>
+			<ul>
+			  <li>Every plug-in follows the CMS license. If none is provided use GPLv3.</li>
+			</ul>
+
+		  </section>
+		  
+		  <section class="versions">
+
+			<h2 name="localization" id="localization">Localization:</h2>
+
+			<b>List of language files</b>
+			<ul>
+			  <li><a href="translations/en.dtd">translations/en.dtd</a></li>
+			  <li><a href="translations/es.dtd">translations/es.dtd</a></li>
+			</ul>
+			<b>Notice:</b> You need to escape on strings "&amp;" with "&amp;amp;" and quotes (") with "&amp;quot;" on these files.
+		  </section>
+
+	
+		  
+		  <section >
+			
+			  <h2 id="Textpattern">Textpattern</h2>
+			  To install:
+			  <ul>
+				<li>Install <a name="Textpattern" href="http://textpattern.com/">Textpattern</a></li>
+				<li>On admin interface Go to "Admin" -> "Plug-ins"</li>
+				<li>Copy the content of "plugin.txt" and press "Upload"</li>
+				<li>Press Install.</li>
+				<li>Go to "Admin" -> "Plug-in" and active this plug-in by clicking "no"</li>
+				<li>Load the interface from "Content" -> "Translations"</li>
+			  </ul>
+			  
+			  To compile (powered by <a href="http://textpattern.org/mods/239/zem_tpl-textpattern-plugin-template">zem_tpl</a>)
+			  <ul>
+				  <li>Run from the command line "php myg_translations_plugin.php > plugin.txt"</li>
+			  </ul>
+			  <a href="textpattern.zip"><b>Download myGengo for Textpattern</b></a>
+			  
+		  </section>
+		  
+		  <section >
+			
+			  <h2 id="FrogCMS" >FrogCMS</h2>
+			  To install:
+			  <ul>
+				<li>Install <a name="FrogCMS" href="http://www.madebyfrog.com/">FrogCMS</a></li>
+				<li>Copy the plug-in folder "mygengo" to /frog/plug-ins/ ( should be '/frog/plug-ins/mygengo'  it's case sensitive )</li>
+				<li>Give write permissions to /frog/plug-ins/mygengo/nonpublic/</li>
+				<li>On back-end go to "Administration" and activate this plug-in by simple click on check-box</li>
+				<li>It adds a top tab called "myGengo"</li>
+			  </ul>
+			  <a href="frogcms.zip"><b>Download myGengo for FrogCMS</b></a>
+		
+		  </section>
+		  
+		  <section>
+			
+			  <h2 id="WordPress">WordPress</h2>
+			  To install:
+			  <ul>
+				<li>Install <a name="WordPress" href="http://wordpress.com/">WordPress</a></li>
+				<li>Copy the plug-in to /wp-content/plug-ins/</li>
+				<li>On back-end go to Plug-ins and activate this plug-in.</li>
+				<li>It adds a menu-item "myGengo" under "Tools" menu in sidebar</li>
+			  </ul>
+			  <a href="wordpress.zip"><b>Download myGengo for WordPress</b></a>
+		  </section>
+ 		  
+		  <section>
+			
+			  <h2 id="Joomla">Joomla!</h2>
+			  To install:
+			  <ul>
+				<li>Install <a name="Joomla" href="http://joomla.com/">Joomla!</a></li>
+				<li>Go to "Extensions" -> "Extension Manager"</li>
+				<li>Go to "Install" and browse for this zipped plug-in.</li>
+				<li>It adds a menu-item "myGengo" under "Components"</li>
+			  </ul>
+			  <a href="joomla.zip"><b>Download myGengo for Joomla!</b></a>
+		  </section>
+ 
+		  <section >
+  
+				<h2 id="NucleusCMS">NucleusCMS</h2>
+				To install:
+				<ul>
+				  <li>Install <a name="NucleusCMS" href="http://nucleuscms.org/">NucleusCMS</a></li>
+				  <li>Copy the plug-in folder "mygengo" and NP_mygengo.php to /nucleus/plug-ins/</li>
+				  <li>Give write permissions to /nucleus/plugins/mygengo/nonpublic/</li>
+				  <li>On back-end go to "Management" Plug-ins and activate this plug-in by selecting from the drop-down and clicking "install plug-in"</li>
+				  <li>It adds a sidebar tab called "myGengo"</li>
+				</ul>
+				<a href="nucleuscms.zip"><b>Download myGengo for NucleusCMS</b></a>
+			
+		  </section>
+		
+		  <footer >
+			
+				<h2 name="motivations" id="motivations">Motivations</h2>
+				<ul>
+				  <li>
+			  These plug-ins were developed by <script>document.write('<a href="mailto:my'+'gengo'+''+'plugins'+'@'+'G'+'mail.com">Tito Bouzout</a>')</script> to participate in the bounty APILab program from <a href="http://mygengo.com/">myGengo</a> ( professional translation service ).
+				  </li>
+				</ul>
+  
+		  </footer>
+		
+		  <aside>
+			<a href="http://mygengo.com/"><img src="powered.png" border="0"/></a>
+		  </aside>
+
+
+		  <br/><br/><br/><br/><br/><br/><br/><br/><br/>
+		  <br/><br/><br/><br/><br/><br/><br/><br/><br/>
+
+</body>
+</html>
